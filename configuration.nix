@@ -11,6 +11,7 @@
       ./modules/audio.nix
       ./modules/bootloader.nix
       ./modules/desktop.nix
+      ./modules/hardware-sobremesa.nix
       ./modules/locale.nix
       ./modules/networking.nix
       ./modules/packages.nix
