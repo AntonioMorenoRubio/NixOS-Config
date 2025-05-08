@@ -57,6 +57,7 @@ in
     zapzap
 
     logseq
+    onlyoffice-desktopeditors
 
     krita
     unstable.gimp3
