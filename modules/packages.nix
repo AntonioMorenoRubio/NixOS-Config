@@ -3,6 +3,8 @@
 let
   # Anime Game Launcher
   aagl = import (builtins.fetchTarball "https://github.com/ezKEa/aagl-gtk-on-nix/archive/release-24.11.tar.gz");
+
+  unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
 in
 {
   # Install firefox.
@@ -53,6 +55,9 @@ in
     zapzap
 
     logseq
+
+    krita
+    unstable.gimp3
 
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
