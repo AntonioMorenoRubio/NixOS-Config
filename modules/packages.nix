@@ -52,8 +52,14 @@ in
     telegram-desktop
     zapzap
 
+    logseq
+
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
+  ];
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-27.3.11" # Required for logseq
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
