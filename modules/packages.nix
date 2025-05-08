@@ -35,6 +35,8 @@ in
   environment.systemPackages = with pkgs; [
     ntfs3g
     git
+    filelight
+    gparted
 
     # Desarrollo
     ## .NET
