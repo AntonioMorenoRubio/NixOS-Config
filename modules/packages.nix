@@ -34,6 +34,9 @@ in
     ntfs3g
     git
 
+    # Required for AppImages (Including Turtle WoW)
+    appimage-run
+
     # Star Wars Galaxies Reckoning Requirements
     protonplus
     lutris
