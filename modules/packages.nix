@@ -56,11 +56,13 @@ in
     telegram-desktop
     zapzap
 
+    # Oficina y documentación
     logseq
     onlyoffice-desktopeditors
 
     krita
     unstable.gimp3
+    vlc
 
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
