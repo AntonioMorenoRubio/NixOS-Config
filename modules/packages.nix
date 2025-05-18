@@ -51,6 +51,14 @@ in
     protonplus
     lutris
 
+    # RetroArch
+    retroarch
+    libretro.beetle-psx
+    libretro.beetle-psx-hw
+    libretro.ppsspp
+    libretro.vba-m
+    libretro.picodrive
+
     # Comunicaciones
     discord
     telegram-desktop
