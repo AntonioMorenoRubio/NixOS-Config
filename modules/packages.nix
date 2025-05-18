@@ -22,6 +22,9 @@ in
     localNetworkGameTransfers.openFirewall = true; # Open   ports in the firewall for Steam Local Network Game   Transfers
   };
 
+  # Modo juego para el Sistema Operativo
+  programs.gamemode.enable = true;
+
   # Anime Game Launcher
   imports = [
     ../cachix.nix
