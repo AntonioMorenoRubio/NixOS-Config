@@ -51,6 +51,8 @@ in
     protonplus
     lutris
 
+    prismlauncher
+
     # RetroArch
     retroarch
     libretro.beetle-psx
