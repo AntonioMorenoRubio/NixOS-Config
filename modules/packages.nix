@@ -57,6 +57,8 @@ in
 
     prismlauncher
 
+    mangohud # Overlay de rendimiento para juegos hecho en Vulkan y OpenGL
+
     # RetroArch
     retroarch
     libretro.beetle-psx
