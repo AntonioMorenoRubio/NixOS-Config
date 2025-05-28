@@ -20,7 +20,7 @@
   };
 
   fileSystems."/mnt/JUEGOS" = {
-    device = "/dev/disk/by-uuid/386c5e24-a247-4025-ae5a-e8cc336ee5b5";
+    device = "/dev/disk/by-uuid/712215b5-1d4f-44ce-bf23-c9f3718b648f";
     fsType = "ext4";
   };
 }

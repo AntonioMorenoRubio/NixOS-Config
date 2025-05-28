@@ -13,6 +13,7 @@ in
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+
   # Install Steam
   programs.steam = {
     enable = true;
@@ -39,7 +40,7 @@ in
   environment.systemPackages = with pkgs; [
     ntfs3g
     git
-    filelight
+    kdePackages.filelight
     gparted
 
     # Desarrollo
@@ -77,7 +78,7 @@ in
     onlyoffice-desktopeditors
 
     krita
-    unstable.gimp3
+    gimp3
     vlc
 
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
