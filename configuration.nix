@@ -12,6 +12,7 @@
       ./modules/bootloader.nix
       ./modules/desktop.nix
       ./modules/hardware-sobremesa.nix
+      ./modules/honkers.nix
       ./modules/locale.nix
       ./modules/networking.nix
       ./modules/nvidia.nix

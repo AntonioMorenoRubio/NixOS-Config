@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
 let
-  # Anime Game Launcher
-  aagl = import (builtins.fetchTarball "https://github.com/ezKEa/aagl-gtk-on-nix/archive/release-24.11.tar.gz");
-
   unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
 in
 {
@@ -25,15 +22,6 @@ in
 
   # Modo juego para el Sistema Operativo
   programs.gamemode.enable = true;
-
-  # Anime Game Launcher
-  imports = [
-    ../cachix.nix
-    aagl.module
-  ];
-
-  nix.settings = aagl.nixConfig; # Set up Cachix
-  programs.honkers-railway-launcher.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
