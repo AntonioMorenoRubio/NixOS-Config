@@ -36,6 +36,7 @@ in
     dotnet-sdk #.NET 8 / C# 12
     dotnet-sdk_9
     jetbrains.rider
+    neovim
 
     # Required for AppImages (Including Turtle WoW)
     appimage-run
