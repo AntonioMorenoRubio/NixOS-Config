@@ -39,7 +39,7 @@ in
     jetbrains.rider
     neovim
 
-    # Required for AppImages (Including Turtle WoW)
+    # Required for AppImages
     appimage-run
 
     # Star Wars Galaxies Reckoning Requirements
