@@ -30,6 +30,7 @@ in
     git
     kdePackages.filelight
     gparted
+    kdePackages.yakuake
 
     # Desarrollo
     ## .NET
