@@ -32,6 +32,8 @@ in
     gparted
     kdePackages.yakuake
 
+    librewolf
+
     # Desarrollo
     ## .NET
     dotnet-sdk #.NET 8 / C# 12
