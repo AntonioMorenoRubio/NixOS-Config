@@ -37,6 +37,9 @@ in
     # Mecanografía
       tipp10
 
+    # Organización y funciones ejecutivas
+      super-productivity
+
     # Desarrollo
     ## .NET
     dotnet-sdk #.NET 8 / C# 12
