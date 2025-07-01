@@ -34,6 +34,9 @@ in
 
     librewolf
 
+    # Mecanografía
+      tipp10
+
     # Desarrollo
     ## .NET
     dotnet-sdk #.NET 8 / C# 12
