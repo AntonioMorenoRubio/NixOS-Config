@@ -32,14 +32,6 @@ in
     gparted
     kdePackages.yakuake
 
-    librewolf
-
-    # Mecanografía
-      tipp10
-
-    # Organización y funciones ejecutivas
-      super-productivity
-
     # Desarrollo
     ## .NET
     dotnet-sdk #.NET 8 / C# 12
@@ -50,7 +42,7 @@ in
     # Required for AppImages
     appimage-run
 
-    # Star Wars Galaxies Restoration Requirements
+    # Star Wars Galaxies Reckoning Requirements
     protonplus
     lutris
 
