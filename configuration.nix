@@ -14,7 +14,6 @@
       ./modules/bootloader.nix
       ./modules/desktop.nix
       ./modules/hardware-sobremesa.nix
-      ./modules/honkers.nix
       ./modules/fonts.nix
       ./modules/locale.nix
       ./modules/networking.nix
