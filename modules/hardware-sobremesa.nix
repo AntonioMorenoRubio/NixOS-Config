@@ -18,9 +18,4 @@
     fsType = "ntfs-3g";
     options = [ "rw" "uid=1000" "gid=100" ];
   };
-
-  fileSystems."/mnt/JUEGOS" = {
-    device = "/dev/disk/by-uuid/712215b5-1d4f-44ce-bf23-c9f3718b648f";
-    fsType = "ext4";
-  };
 }
