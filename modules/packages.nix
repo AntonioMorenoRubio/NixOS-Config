@@ -12,9 +12,13 @@ in
   # Install firefox.
   programs.firefox.enable = true;
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
+  nixpkgs.config = {
+    allowUnfree = true; # Allow unfree packages
+    permittedInsecurePackages = [
+      "electron-27.3.11" # Required for logseq
+      "dotnet-sdk-6.0.428" # .NET 6
+    ];
+  };
 
   # Install Steam
   programs.steam = {
@@ -77,11 +81,6 @@ in
 
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-  ];
-
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-27.3.11" # Required for logseq
-    "dotnet-sdk-6.0.428" # .NET 6
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
