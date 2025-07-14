@@ -5,6 +5,7 @@ let
   dotnetCombined = pkgs.dotnetCorePackages.combinePackages [
     pkgs.dotnet-sdk #.NET 8
     pkgs.dotnet-sdk_9
+    pkgs.dotnet-sdk_6
   ];
 in
 {
@@ -80,6 +81,7 @@ in
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-27.3.11" # Required for logseq
+    "dotnet-sdk-6.0.428" # .NET 6
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
