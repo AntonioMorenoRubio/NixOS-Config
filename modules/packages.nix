@@ -2,6 +2,10 @@
 
 let
   unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
+  dotnetCombined = pkgs.dotnetCorePackages.combinePackages [
+    pkgs.dotnet-sdk #.NET 8
+    pkgs.dotnet-sdk_9
+  ];
 in
 {
   # Install firefox.
@@ -34,8 +38,7 @@ in
 
     # Desarrollo
     ## .NET
-    dotnet-sdk #.NET 8 / C# 12
-    dotnet-sdk_9
+    dotnetCombined
     jetbrains.rider
     neovim
 
