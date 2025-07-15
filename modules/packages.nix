@@ -45,7 +45,15 @@ in
     ## .NET
     dotnetCombined
     jetbrains.rider
+
+    ## Neovim
     neovim
+    ### Dependencies for Kickstart.nvim
+    gnumake
+    unzip
+    gcc
+    ripgrep
+    fd
 
     # Required for AppImages
     appimage-run
