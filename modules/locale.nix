@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  time.hardwareClockInLocalTime = true;
+
   # Set your time zone.
   time.timeZone = "Europe/Madrid";
 
