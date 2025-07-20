@@ -5,6 +5,9 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.05";
     unstable.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
+    home-manager.url = "github:nix-community/home-manager?ref=release-25.05";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
     #Other inputs
     aagl.url = "github:ezKEa/aagl-gtk-on-nix/release-25.05";
     aagl.inputs.nixpkgs.follows = "nixpkgs"; # Name of nixpkgs input you want to use
@@ -25,7 +28,7 @@
     ];
   };
 
-  outputs = { self, nixpkgs, aagl, unstable, autofirma-nix }:
+  outputs = { self, nixpkgs, aagl, unstable, autofirma-nix, home-manager }:
     let
       system = "x86_64-linux";
 
@@ -50,6 +53,14 @@
 
             autofirma-nix.nixosModules.default
             ./modules/autofirma.nix
+
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+
+              home-manager.users.antoniomr = import ./home/antoniomr.nix;
+            }
           ];
         };
       };
