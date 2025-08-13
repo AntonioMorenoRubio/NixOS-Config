@@ -17,6 +17,7 @@
       ./modules/fonts.nix
       ./modules/locale.nix
       ./modules/networking.nix
+      ./modules/nix.nix
       ./modules/nvidia.nix
       ./modules/packages.nix
       ./modules/users.nix
