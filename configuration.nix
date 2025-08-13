@@ -20,6 +20,7 @@
       ./modules/nvidia.nix
       ./modules/packages.nix
       ./modules/users.nix
+      ./modules/virtualization.nix
     ];
 
   # This value determines the NixOS release from which the default

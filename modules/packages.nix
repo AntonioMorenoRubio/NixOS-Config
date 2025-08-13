@@ -42,6 +42,8 @@ in
     kdePackages.yakuake
 
     # Desarrollo
+    docker
+
     ## .NET
     dotnetCombined
     jetbrains.rider
