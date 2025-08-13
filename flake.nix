@@ -5,16 +5,19 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.05";
     unstable.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
-    home-manager.url = "github:nix-community/home-manager?ref=release-25.05";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager = {
+      url = "github:nix-community/home-manager?ref=release-25.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
-    #Other inputs
-    aagl.url = "github:ezKEa/aagl-gtk-on-nix/release-25.05";
-    aagl.inputs.nixpkgs.follows = "nixpkgs"; # Name of nixpkgs input you want to use
+    aagl = {
+      url = "github:ezKEa/aagl-gtk-on-nix/release-25.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     autofirma-nix = {
-      url = "github:nix-community/autofirma-nix";  # For nixpkgs-unstable
-      # url = "github:nix-community/autofirma-nix/release-24.11";  # For NixOS 24.11
+      url = "github:nix-community/autofirma-nix";  # Para nixpkgs-unstable
+      # url = "github:nix-community/autofirma-nix/release-24.11";  # Para NixOS 24.11
       inputs.nixpkgs.follows = "unstable";
     };
   };
