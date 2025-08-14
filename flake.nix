@@ -47,7 +47,7 @@
     {
 
       nixosConfigurations = {
-        nixos = nixpkgs.lib.nixosSystem {
+        anteros = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit system; };
 
           modules = [
