@@ -26,6 +26,10 @@
 	    };
 	};
 
+	starship = {
+	    enable = true;
+	};
+
 	zsh = {
 	    enable = true;
 	    autosuggestion = {
