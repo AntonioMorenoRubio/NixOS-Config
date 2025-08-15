@@ -25,6 +25,16 @@
 		size = 10;
 	    };
 	};
+
+	zsh = {
+	    enable = true;
+	    autosuggestion = {
+		enable = true;
+	    };
+	    syntaxHighlighting = {
+		enable = true;
+	    };
+	};
   };
 
   home.packages = with pkgs; [
