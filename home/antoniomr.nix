@@ -17,6 +17,14 @@
 	    userName = "AntonioMorenoRubio";
 	    userEmail = "amrinformatica10@gmail.com";
 	};
+
+	kitty = {
+	    enable = true;
+	    font = {
+		name = "Fira Code";
+		size = 10;
+	    };
+	};
   };
 
   home.packages = with pkgs; [
