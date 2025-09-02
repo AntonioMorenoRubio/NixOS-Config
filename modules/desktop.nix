@@ -17,4 +17,6 @@
 
   # Configure console keymap
   console.keyMap = "es";
+
+  hardware.keyboard.qmk.enable = true;
 }

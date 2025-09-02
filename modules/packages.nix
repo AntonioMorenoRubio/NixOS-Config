@@ -40,6 +40,9 @@ in
     kdePackages.filelight
     gparted
     kdePackages.yakuake
+    qmk
+    via
+    vial
 
     # Desarrollo
     docker
