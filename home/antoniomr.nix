@@ -3,6 +3,7 @@
 {
   imports = [
     inputs.nixvim.homeModules.nixvim
+    ./modules/nixvim.nix
   ];
 
   home.username = "antoniomr";
@@ -28,10 +29,6 @@
 		name = "Fira Code";
 		size = 10;
 	    };
-	};
-
-	nixvim = {
-	    enable = true;
 	};
 
 	starship = {
