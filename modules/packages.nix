@@ -52,7 +52,7 @@ in
     jetbrains.rider
 
     ## Neovim
-    neovim
+    #neovim
     ### Dependencies for Kickstart.nvim
     gnumake
     unzip

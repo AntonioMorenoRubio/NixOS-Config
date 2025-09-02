@@ -20,6 +20,11 @@
       # url = "github:nix-community/autofirma-nix/release-24.11";  # Para NixOS 24.11
       inputs.nixpkgs.follows = "unstable";
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim/nixos-25.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   nixConfig = {
@@ -31,7 +36,7 @@
     ];
   };
 
-  outputs = { self, nixpkgs, aagl, unstable, autofirma-nix, home-manager }:
+  outputs = { self, nixpkgs, aagl, unstable, autofirma-nix, home-manager, nixvim }@inputs:
     let
       system = "x86_64-linux";
 
@@ -63,6 +68,8 @@
               home-manager.useUserPackages = true;
 
               home-manager.users.antoniomr = import ./home/antoniomr.nix;
+              home-manager.extraSpecialArgs = { inherit inputs; };
+              home-manager.backupFileExtension = "backup";
             }
           ];
         };

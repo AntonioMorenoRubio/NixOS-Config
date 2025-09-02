@@ -1,6 +1,10 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
+  imports = [
+    inputs.nixvim.homeModules.nixvim
+  ];
+
   home.username = "antoniomr";
   home.homeDirectory = "/home/antoniomr";
 
@@ -24,6 +28,10 @@
 		name = "Fira Code";
 		size = 10;
 	    };
+	};
+
+	nixvim = {
+	    enable = true;
 	};
 
 	starship = {
