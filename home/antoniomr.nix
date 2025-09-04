@@ -2,8 +2,8 @@
 
 {
   imports = [
-    inputs.nixvim.homeModules.nixvim
-    ./modules/nixvim.nix
+    inputs.nvf.homeManagerModules.default
+    ./modules/nvf.nix
   ];
 
   home.username = "antoniomr";

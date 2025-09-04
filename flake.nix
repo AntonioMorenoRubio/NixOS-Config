@@ -21,9 +21,9 @@
       inputs.nixpkgs.follows = "unstable";
     };
 
-    nixvim = {
-      url = "github:nix-community/nixvim/nixos-25.05";
-      inputs.nixpkgs.follows = "nixpkgs";
+    nvf = {
+      url = "github:NotAShelf/nvf";
+      inputs.nixpkgs.follows = "unstable";
     };
   };
 
@@ -36,7 +36,7 @@
     ];
   };
 
-  outputs = { self, nixpkgs, aagl, unstable, autofirma-nix, home-manager, nixvim }@inputs:
+  outputs = { self, nixpkgs, aagl, unstable, autofirma-nix, home-manager, nvf }@inputs:
     let
       system = "x86_64-linux";
 
