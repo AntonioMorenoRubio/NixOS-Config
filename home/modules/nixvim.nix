@@ -6,5 +6,9 @@
         enable = true;
 
         colorschemes.vscode.enable = true;
+
+        plugins = {
+            lualine.enable = true;
+        };
     };
 }
