@@ -42,6 +42,14 @@
             }
           ];
         };
+
+        lsp = {
+          enable = true;
+          formatOnSave = true;
+          inlayHints.enable = true;
+          lightbulb.enable = true;
+          trouble.enable = true;
+        };
       };
     };
   };
