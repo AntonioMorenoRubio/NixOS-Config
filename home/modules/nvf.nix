@@ -6,6 +6,8 @@
         globals = {
           mapleader = " ";
         };
+
+        statusline.lualine.enable = true;
       };
     };
   };
