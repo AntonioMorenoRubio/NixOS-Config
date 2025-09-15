@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
   programs.nvf = {
@@ -76,6 +76,48 @@
         extraPackages = with pkgs; [
           nodePackages.prettier
         ];
+
+        diagnostics = {
+          enable = true;
+          config = {
+            virtual_text = {
+              enabled = true;
+              source = "if_many";
+              spacing = 4;
+              prefix = "●";
+              # Configuración para mostrar múltiples errores
+              severity = {
+                min = "HINT";  # Mostrar todos los niveles
+              };
+              # Formato personalizado para los mensajes
+              format = lib.generators.mkLuaInline ''
+                function(diagnostic)
+                  return string.format("%s (%s)", diagnostic.message, diagnostic.source)
+                end
+              '';
+            };
+            signs = {
+              text = {
+                ERROR = "";
+                WARN = "";
+                INFO = "";
+                HINT = "";
+              };
+            };
+            underline = true;
+            update_in_insert = false;
+            severity_sort = true;
+            float = {
+              focusable = false;
+              style = "minimal";
+              border = "rounded";
+              source = "always";
+              header = "";
+              prefix = "";
+            };
+            virtual_lines.enable = true;
+          };
+        };
       };
     };
   };
