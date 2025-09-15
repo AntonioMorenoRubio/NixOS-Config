@@ -50,6 +50,17 @@
           lightbulb.enable = true;
           trouble.enable = true;
         };
+
+        languages = {
+          csharp.enable = true;
+          java.enable = true;
+          lua.enable = true;
+          markdown.enable = true;
+          nix.enable = true;
+          python.enable = true;
+          sql.enable = true;
+          ts.enable = true;
+        };
       };
     };
   };
