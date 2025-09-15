@@ -16,6 +16,13 @@
             enable = true;
           };
         };
+
+        lazy = {
+          enable = true;
+          plugins = {
+
+          };
+        };
       };
     };
   };
