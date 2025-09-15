@@ -59,8 +59,23 @@
           nix.enable = true;
           python.enable = true;
           sql.enable = true;
-          ts.enable = true;
+          ts = {
+            enable = true;
+            format = {
+              enable = true;
+              type = "prettier";
+              package = pkgs.vimPlugins.vim-prettier;
+            };
+            lsp = {
+              enable = true;
+              server = "ts_ls";  # O "typescript-language-server"
+            };
+          };
         };
+
+        extraPackages = with pkgs; [
+          nodePackages.prettier
+        ];
       };
     };
   };
