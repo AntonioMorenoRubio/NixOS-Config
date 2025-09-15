@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   programs.nvf = {
     enable = true;
@@ -28,6 +30,17 @@
           enable = true;
           name = "everforest";
           style = "hard";
+        };
+
+        telescope = {
+          enable = true;
+          extensions = [
+            {
+              name = "fzf";
+              packages = [pkgs.vimPlugins.telescope-fzf-native-nvim];
+              setup = {fzf = {fuzzy = true;};};
+            }
+          ];
         };
       };
     };
