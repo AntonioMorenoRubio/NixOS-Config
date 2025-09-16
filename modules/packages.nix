@@ -63,7 +63,7 @@ in
     # Required for AppImages
     appimage-run
 
-    # Star Wars Galaxies Reckoning Requirements
+    # Star Wars Galaxies Restoration Requirements
     protonplus
     lutris
 
