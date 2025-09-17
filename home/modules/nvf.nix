@@ -52,6 +52,8 @@
         };
 
         languages = {
+          enableFormat = true;
+
           css = {
             enable = true;
             format.type = "prettierd";
