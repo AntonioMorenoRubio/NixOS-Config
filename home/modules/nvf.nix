@@ -52,6 +52,11 @@
         };
 
         languages = {
+          css = {
+            enable = true;
+            format.type = "prettierd";
+            };
+          };
           csharp.enable = true;
           java.enable = true;
           lua.enable = true;
@@ -63,18 +68,18 @@
             enable = true;
             format = {
               enable = true;
-              type = "prettier";
-              package = pkgs.vimPlugins.vim-prettier;
+              type = "prettierd";
             };
             lsp = {
               enable = true;
-              server = "ts_ls";  # O "typescript-language-server"
+              server = "ts_ls";
             };
           };
         };
 
         extraPackages = with pkgs; [
           nodePackages.prettier
+          prettierd
         ];
 
         diagnostics = {
