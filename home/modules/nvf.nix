@@ -1,6 +1,8 @@
-{ lib, pkgs, ... }:
-
 {
+  lib,
+  pkgs,
+  ...
+}: {
   programs.nvf = {
     enable = true;
     settings = {
@@ -22,7 +24,6 @@
         lazy = {
           enable = true;
           plugins = {
-
           };
         };
 
@@ -58,7 +59,6 @@
           css = {
             enable = true;
             format.type = "prettierd";
-            };
           };
           csharp.enable = true;
           java.enable = true;
@@ -95,7 +95,7 @@
               prefix = "●";
               # Configuración para mostrar múltiples errores
               severity = {
-                min = "HINT";  # Mostrar todos los niveles
+                min = "HINT"; # Mostrar todos los niveles
               };
               # Formato personalizado para los mensajes
               format = lib.generators.mkLuaInline ''
